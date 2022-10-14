@@ -1,0 +1,80 @@
+Bootstrap 5
+
+- Layout
+- Content
+- Forms
+- Components
+
+Jumbotron di v.5 Tidak ada sekarang disebut hero section
+Jika agar text di tengah menggunakan text-center
+namun jika kanan kiri tidak ada dan diganti dengan right dan end
+
+
+Utilities > Nama Warna
+
+
+----- Navbar
+div : cara agar navbar tidak terlalu mepet ganti 'container-fluid' menjadi 'container' saja
+ul : cara agar text berada di kanan tambahkan margin start 'ms-auto'
+nav : nav bar menjadi biru 'bg-primary'
+      'navbar-light' class bootstrap yg memberitahukan bahwa warna yang digunakan terang, maka text akan menjadi hitam
+      maka ganti menjadi 'navbar-dark' (kebalikannya) agar text menjadi terang
+      memberikan shadow 'shadow-sm'
+      berikan 'fixed-top' agar navbar berada di atas web
+
+----- Jumbotron
+Setiap Kontennya Masukkan dalam section
+section : berikan 'text-center' agar konten berada di tengah
+img : berikan 'rounded-circle' agar image menjadi bulat
+      berikan 'img-thumbnail' untuk border luar gambar
+h1 : 'display-4' memberikan ketebalan dan jenis text berbeda
+p : class 'lead' merubah ketebalan dan jenis text berbeda
+svg : memberikan waves (https://getwaves.io/)
+
+----- About Me!
+Setiap Kontennya Masukkan dalam section
+row : di dalam container > row, berikan 'text-center' agar text berada di tengah
+      memberikan mb > Utilities(margin-bottom 'mb-4')
+row : agar colnya berada di tengah berikan justify-content-center
+      memberikan font-size 'fs-5'
+      agar rata tengah diberikan 'text-center'
+col : artinya 1 halaman web dibuat 1 kolom
+      jika ada 2 col maka 1 halaman web dibagi 2 col (masing masing 6)
+      maka jika ingin mengatur ukuran colnya berikan angka misal (col-4)
+      Responsive (breakpoint) agar card menjadi responsive berikan menjadi md 
+      misal col-md-4
+svg : memberikan waves (https://getwaves.io/)
+
+----- Projects
+Setiap Kontennya Masukkan dalam section
+row : div.container > div.row berikan 'text-center' agar judul berada di tengah
+col : 'col-4' akan membuat ukuran sebesar 4col dari 12col
+      Card > style dihapus
+      Responsive (breakpoint) agar card menjadi responsive berikan menjadi md 
+      misal col-md-4
+      agar 2 gambar lagi berada di tengah di row berikan 'justify-content-center'
+svg : memberikan waves (https://getwaves.io/)
+
+----- Contact
+Setiap Kontennya Masukkan dalam section
+row : div.container > div.row berikan 'text-center' agar judul berada di tengah
+      'mb-4' = margin bottom 4
+row : justify-content-center agar konten berada di tengah
+col : berikan col-md-8 agar ukurannya sebesar 8 col dan md agar menjadi responsive
+      berikan form text, dan text area
+svg : memberikan waves (https://getwaves.io/)
+
+----- Footer
+Footer : diberikan 'bg-primary' agar warna sama dengan navbar
+         diberikan 'text-light' agar tulisan menjadi putih
+         diberikan 'text-center' agar text berada di tengah
+         diberikan 'pb-5' padding bottom
+p : diberi icon love <i class="bi bi-suit-heart-fill text-danger"></i>
+            untuk mengaktifkannya panggil
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    a : agar saat di klik menuju sosial media kita
+        'text-white' agar tulisan menjadi putih
+        'fw-bold' agar tulisan menjadi bold
+
+----- Hyperlink
+body diberi id sebagai #home

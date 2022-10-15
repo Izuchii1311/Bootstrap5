@@ -84,8 +84,108 @@ body diberi id sebagai #home
 // Upload ke GitHub
 // Edit Code to GitHub
       edit file
-      Buka cmd Git > code .
-      maka akan masuk ke vscode (jika sudah di ubah maka tinggal langsung jika belum maka diubah dulu file nya)
-      view > terminal (ctrl + `)
-      klik select item dan pilih Select Default Shell
-      
+      Buka cmd Git pada lokasi filenya
+      git add .
+      git commit -m 'Mengubah Button Menjadi Warna Hijau'
+      git push
+
+      Buka lagi pada github maka hasil perubahan akan terlihat
+
+// Upload menggunakan NiagaHoster
+// Video Bootstrap 5
+
+
+
+// Animate menggunakan AOS 
+Search AOS (https://michalsnik.github.io/aos/)
+lalu buka githubnya untuk cara penggunaannya README
+copy kan link dan scriptnya
+dan berikan animatenya misal (data-aos="fade-down")
+
+Section About
+Pada Paragraf di About
+data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200"
+
+Section Projects
+Pada div dengan class card berikan
+data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200"
+
+untuk setiap gambar
+data-aos="flip-left" data-aos-duration="1500" (gambar awal)
+data-aos="flip-left" data-aos-duration="1500" data-aos-delay="400" (gambar akhir berikan delay / 100 tiap cardnya kecuali card awal)
+
+
+Script agar animasi hanya dilakukan 1x tidak berulang kali dengan menambahkan
+<script>
+      AOS.init({
+            once: true
+      });
+</script>
+
+
+----- Gallery
+Buat Section Gallery dengan id dan class Gallery > container > row > col-md-3
+Buat folder baru di dalam img dengan nama folder gallery dan masukkan gambar sebanyak yang dibutuhkan
+lalu buat tag a agar sebagai hyperlink dan di dalam tag a ada tag img 
+masukkan img dengan gambar yang berada di folder gallery
+
+img : berikan 'img-fluid' agar gambar menjadi responsive
+      lalu buat class baru dengan nama class gallery-img
+
+      lalu tambahkan di dalam style.css
+      .gallery-img {
+      width: 100%;
+      }
+      Agar gambar menyesuaikan sebesar 100% saat di mobile
+
+      #gallery .row > * {
+      padding: 0;
+      }
+      agar gambar menempel dan tidak ada jarak saat dibuka di versi mobile
+
+
+const galleryImage = document.querySelectorAll('.gallery-img');
+
+            galleryImage.forEach((img, i) => {
+                img.dataset.aos = 'fade-down';
+                img.dataset.aosDelay = i * 100;
+                img.dataset.aosDuration = 1000;
+            })
+
+Di dalam Script buat variabel dengan galleryImage dan panggil disetiap class 'gallery-img'
+pada variabel galleryImage lakukan perulangan pada tag img, (i) tambah 1 animasi dari aos
+kemudian berikan animasi dari aos fade-down, delay dan durasi pada semua tag img yang diberikan class .gallery-img
+
+
+Penggunaan GSAP Property (https://greensock.com/docs/v3/Installation)
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+to (patokan awal) from (patokan akhir)
+
+Ada 2 element (1. Tag mana yg di pilih, 2. Property GSAP)
+Contoh : gsap.from('.display-4', {duration: 1, x: 50, opacity: 0, delay: 0.5, ease: 'back'});
+
+Text plugin GSAP
+https://greensock.com/docs/v3/Installation
+Klik CDN > text 
+copy script
+lalu buat source code, seperti
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.lead', { duration: 1.5, delay: 1.5, text: 'Design Graphic || Programmer || Gamer' });
+
+
+
+
+
+// Tilt JS
+- Search Tilt JS (https://micku7zu.github.io/vanilla-tilt.js/)
+      - Pilih Vanilla JS
+      - Klik vanilla-tilt.min.js
+      - Save dan simpan ke dalam folder
+      - Tambahkan <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+      - Lalu untuk membuat scriptnya seperti ini
+	<script>
+	VanillaTilt.init(document.querySelector(".your-element"), {
+		max: 25,
+		speed: 400
+	});
+	</script>

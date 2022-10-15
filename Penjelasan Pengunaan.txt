@@ -78,3 +78,14 @@ p : diberi icon love <i class="bi bi-suit-heart-fill text-danger"></i>
 
 ----- Hyperlink
 body diberi id sebagai #home
+
+
+
+// Upload ke GitHub
+// Edit Code to GitHub
+      edit file
+      Buka cmd Git > code .
+      maka akan masuk ke vscode (jika sudah di ubah maka tinggal langsung jika belum maka diubah dulu file nya)
+      view > terminal (ctrl + `)
+      klik select item dan pilih Select Default Shell
+      

@@ -184,8 +184,19 @@ lalu buat source code, seperti
       - Tambahkan <script type="text/javascript" src="vanilla-tilt.min.js"></script>
       - Lalu untuk membuat scriptnya seperti ini
 	<script>
-	VanillaTilt.init(document.querySelector(".your-element"), {
+	VanillaTilt.init(document.querySelector(".keyboard-box"), {
 		max: 25,
 		speed: 400
 	});
 	</script>
+- Lalu membuat animasi dan memasukkan gambar agar dapat 3D
+
+
+
+// Menyimpan Pesan Ke Google Sheet
+- Buka GitHub (github.com/jamiewilson/form-to-google-sheets)
+- Buka Google sheets
+- Ikuti Langkahnya seperti yang ada di github
+- Jika memberikan headers pada google sheets
+      Kemudian berikan name pada formnya  misalkan di google sheets ada alamat maka pada form alamat berikan name="alamat" pada inputannya dan harus sama agar saling terconect
+- Memberikan Alert dan Loading, kemudian dianimasikan menggunakan Java Script
